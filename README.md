@@ -5,4 +5,5 @@ This is a react based typing app which will calculate Words per minute and accur
 # Steps to run
 
 install all packages using "npm i"
+
 Run using "npm start"
