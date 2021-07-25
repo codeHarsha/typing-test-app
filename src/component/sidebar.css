@@ -1,0 +1,27 @@
+.sidebar-comp { 
+    
+}
+
+.sidebar-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-icon {
+    margin-top: 12px;
+}
+
+.sidebar-icon:hover {
+    color: blueviolet;
+}
+
+@media all and (max-width: 450px) {
+    .sidebar-inner {
+        flex-direction: row;
+    }
+
+    .sidebar-icon {
+        margin-left: 12px;
+        margin-bottom: 6px;
+    }
+}

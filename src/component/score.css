@@ -1,0 +1,38 @@
+.score-inner {
+    height: 100%;
+}
+
+.wpm {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    margin: 10%;
+}
+
+.score-number {
+    background: -webkit-linear-gradient( 45deg,#4A00E0, #8E2DE2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 75px;
+    text-align: center;
+}
+
+.score-text {
+    background: -webkit-linear-gradient( 45deg,#4A00E0, #8E2DE2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+@media all and (max-width: 450px) {
+    .wpm {
+        flex-direction: column;
+    }
+}

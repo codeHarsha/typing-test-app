@@ -1,0 +1,127 @@
+.main-top {
+    position: fixed;
+    width: 95%;
+    height: 10vh;
+}
+
+.main-bottom {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-left-comp {
+    margin-left: 80px;
+    width: 50%;
+}
+
+.main-right-comp {
+    width: 50%;
+}
+
+.top-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 20%;
+    line-height: 35px;
+    color: whitesmoke;
+}
+
+.typing-text {
+    margin-left: 20%;
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    background: -webkit-linear-gradient( 45deg,#4A00E0, #8E2DE2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-left: 20%;
+    border: 1px solid #4A00E0;
+    background-color: #000000;
+    color: whitesmoke;
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main-button-div {
+    margin-top: 25px;
+}
+
+.main-button:hover {
+    background: -webkit-linear-gradient( 45deg,#4A00E0, #8E2DE2);
+}
+
+@media all and (max-width: 1130px) {
+    .main-bottom {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .main-left-comp {
+        text-align: center;
+        padding:0px;
+        margin:0px;
+    }
+    .main-right-comp {
+        text-align: center;
+        margin: 0px;
+        padding:0px;
+    }
+    .top-text {
+        margin-left: 0px;
+    }
+    
+    .main-button {
+        margin-left: 0px ;
+    }
+
+    .typing-text {
+        margin-left: 0px;
+    }
+}
+
+@media all and (max-width: 630px) {
+
+    .top-text {
+        font-size: 22px;
+    }
+    
+    .main-button {
+        font-size: 10px ;
+    }
+
+    .typing-text {
+        font-size: 29px;
+    }
+
+    .main-image {
+        width: 250px;
+    }
+}
+
+@media all and (max-width: 450px) {
+
+    .main-left-comp {
+        padding-left: 10%;
+        margin-top: 50%;
+        text-align: left;
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-image {
+        display: none;
+    }
+}
