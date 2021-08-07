@@ -13,7 +13,7 @@ function Sidebar() {
                 <Link to="landing" smooth={true} duration={500}><HomeRoundedIcon className="sidebar-icon" fontSize="small"/> </Link>
                 <Link to="typer" smooth={true} duration={500}><KeyboardRoundedIcon className="sidebar-icon" fontSize="small"/> </Link>
                 <Link to="score" smooth={true} duration={500}><SpeedIcon className="sidebar-icon" fontSize="small"/> </Link>
-                <GitHubIcon className="sidebar-icon" fontSize="small"/>
+                <a className="atag" href="https://github.com/codeHarsha/typing-test-app"><GitHubIcon className="sidebar-icon" fontSize="small" /></a>
             </div>
         </div>
     );

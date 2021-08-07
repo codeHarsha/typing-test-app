@@ -23,6 +23,7 @@ export default function Typer(props) {
         setinputText(prevState => {
             return { ...prevState, text: s }  /** usage of prevState to avoid direct change of current state */
         });
+
         let arrayInput = s.split(" ");
         textCompare(arrayInput);
         calculateLiveWPMAndAccu();
@@ -48,6 +49,9 @@ export default function Typer(props) {
     const textCompare = (obj) => {
         if(obj.length===1 && obj[0]==="") {
             correct.length = 0;
+        }
+        if(obj.length+1 === correct.length) {
+            correct.pop();
         }
         console.log(textArray);
         console.log(obj);
